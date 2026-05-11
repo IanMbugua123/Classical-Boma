@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kitale Site Visits</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* ===== BACKGROUND (ANIMATED GRADIENT) ===== */
+    body {
+      background: linear-gradient(270deg, #0f2027, #203a43, #2c5364);
+      background-size: 600% 600%;
+      animation: gradientBG 12s ease infinite, fadeIn 0.8s ease forwards;
+      color: #fff;
+      opacity: 0;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    /* ===== GLASS CONTAINER ===== */
+    .container {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 25px;
+      margin-top: 20px;
+    }
+
+    /* ===== TITLE ===== */
+    h2 {
+      font-weight: 700;
+      margin: 30px 0;
+    }
+
+    /* ===== BACK BUTTON ===== */
+    .back-btn {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: 0.3s ease;
+    }
+
+    .back-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    /* ===== GALLERY ===== */
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: 0.5s ease;
+    }
+
+    .gallery-img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.5s ease;
+    }
+
+    .gallery-item:hover .gallery-img {
+      transform: scale(1.1);
+      filter: brightness(0.8);
+    }
+
+    /* OVERLAY */
+    .gallery-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+      opacity: 0;
+      transition: 0.4s ease;
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .gallery-overlay p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    /* ===== LIGHTBOX ===== */
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.95);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+    }
+
+    .lightbox.active {
+      display: flex;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- BACK BUTTON -->
+  <a href="/index.html" class="back-btn">← Back</a>
+
+  <h2 class="text-center">Kitale Site Visits</h2>
+
+  <!-- GALLERY -->
+  <div class="row g-4">
+
+    <div class="col-md-4 gallery-item">
+      <img src="../img/Site Visit/Kitale-site/Kitale-site.jpeg" class="gallery-img">
+      <div class="gallery-overlay"><p>Kitale Project</p></div>
+    </div>
+
+    <div class="col-md-4 gallery-item">
+      <img src="../img/Site Visit/Kitale-site/Kitale-site1.jpeg" class="gallery-img">
+      <div class="gallery-overlay"><p>Kitale Site</p></div>
+    </div>
+
+    <div class="col-md-4 gallery-item">
+      <img src="../img/Team/Kitale/Kitale-team5.jpeg" class="gallery-img">
+      <div class="gallery-overlay"><p>Kitale Team</p></div>
+    </div>
+
+    <div class="col-md-4 gallery-item">
+      <img src="../img/Kitchen Cabinates/Kitale/Kitale-cabinates.jpeg" class="gallery-img">
+      <div class="gallery-overlay"><p>Kitale-cabinates</p></div>
+    </div>
+
+    <div class="col-md-4 gallery-item">
+      <img src="../img/Team/Kitale/Kitale-team.jpeg" class="gallery-img">
+      <div class="gallery-overlay"><p>Kitale Project</p></div>
+    </div>
+
+    <div class="col-md-4 gallery-item">
+      <img src="../img/Team/Kitale/Kitale-team4.jpeg" class="gallery-img">
+      <div class="gallery-overlay"><p>Kitale Team</p></div>
+    </div>
+
+    <div class="col-md-4 gallery-item">
+      <img src="../img//Tv Stand/Kitale/Kitale-tv-stand.jpeg" class="gallery-img">
+      <div class="gallery-overlay"><p>Kitale Tv Stand</p></div>
+    </div>
+
+    <div class="col-md-4 gallery-item">
+      <img src="../img/Wardrope Lighting/Kitale/Wardrope Lighting-Kitale2.jpeg" class="gallery-img">
+      <div class="gallery-overlay"><p>Kitale Wardrope Lighting</p></div>
+    </div>
+
+    <div class="col-md-4 gallery-item">
+      <img src="../img/Kitchen Cabinates/Kitale/Kitale-cabinates1.jpeg" class="gallery-img">
+      <div class="gallery-overlay"><p>Kitale-cabinates</p></div>
+    </div>
+
+    <div class="col-md-4 gallery-item">
+      <img src="../img/Site Visit/Kitale-site/Kitale-site2.jpeg" class="gallery-img">
+      <div class="gallery-overlay"><p>Kitale Project</p></div>
+    </div>
+
+    <div class="col-md-4 gallery-item">
+      <img src="../img/Team/Kitale/Kitale-team1.jpeg" class="gallery-img">
+      <div class="gallery-overlay"><p>Kitale Team</p></div>
+    </div>
+
+    <div class="col-md-4 gallery-item">
+      <img src="../img/Wardrope Lighting/Kitale/Wardrope Lighting-Kitale1.jpeg" class="gallery-img">
+      <div class="gallery-overlay"><p>Kitale Wardrope Lighting</p></div>
+    </div>
+
+    <div class="col-md-4 gallery-item">
+      <img src="../img/Team/Kitale/Kitale-team2.jpeg" class="gallery-img">
+      <div class="gallery-overlay"><p>Kitale Team</p></div>
+    </div>
+
+    <div class="col-md-4 gallery-item">
+      <img src="../img/Wardrope Lighting/Kitale/Wardrope Lighting-Kitale.jpeg" class="gallery-img">
+      <div class="gallery-overlay"><p>Kitale Wardrope Lighting</p></div>
+    </div>
+
+    <div class="col-md-4 gallery-item">
+      <img src="../img/Team/Kitale/Kitale-team3.jpeg" class="gallery-img">
+      <div class="gallery-overlay"><p>Kitale Team</p></div>
+    </div>
+
+    <div class="col-md-4 gallery-item">
+      <img src="../img/Wardrope Lighting/Kitale/Wardrope Lighting-Kitale3.jpeg" class="gallery-img">
+      <div class="gallery-overlay"><p>Kitale Wardrope Lighting</p></div>
+    </div>
+
+    
+
+    
+
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <img src="" id="lightbox-img">
+</div>
+
+<script>
+  const items = document.querySelectorAll(".gallery-item");
+  const images = document.querySelectorAll(".gallery-img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  /* SCROLL ANIMATION */
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = 1;
+        entry.target.style.transform = "translateY(0)";
+      }
+    });
+  });
+
+  items.forEach(item => observer.observe(item));
+
+  /* LIGHTBOX */
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      lightbox.classList.add("active");
+      lightboxImg.src = img.src;
+    });
+  });
+
+  lightbox.addEventListener("click", () => {
+    lightbox.classList.remove("active");
+  });
+</script>
+
+</body>
+</html>

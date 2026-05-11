@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Construction Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #0a192f, #1c4966, #2e8bc0);
+      font-family: 'Poppins', sans-serif;
+      color: #e1f4ff;
+    }
+
+    h2 {
+      color: #56ccf2;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .btn-primary {
+      background-color: #1c75bc;
+      border-color: #1c75bc;
+    }
+
+    .btn-primary:hover {
+      background-color: #3cb0fd;
+      border-color: #3cb0fd;
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .image-box {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      aspect-ratio: 4 / 3;
+      background-color: #173d52;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .image-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    }
+
+    .image-box:hover img {
+      transform: scale(1.1);
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 40, 0.7);
+      color: #56ccf2;
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.4s ease;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+    }
+
+    .image-box:hover .overlay {
+      opacity: 1;
+    }
+
+    footer {
+      text-align: center;
+      color: #56ccf2;
+      padding: 25px 0;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      margin-top: 60px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .image-box { aspect-ratio: 1 / 1; }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container py-5">
+    <h2 class="text-center mb-4 wow animate__animated animate__fadeInDown">Construction Projects</h2>
+
+    <div class="row g-4">
+      <div class="col-md-4 wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
+        <a href="../img/constr.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/constr.jpeg" alt="Structural Framework">
+            <div class="overlay">Structural Framework</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+        <a href="../img/constri.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/constri.jpeg" alt="Modern Architecture">
+            <div class="overlay">Modern Architecture</div>
+          </div>
+        </a>
+      </div>
+
+      
+
+      <div class="col-md-4 wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s">
+        <a href="../img/Construction 2.jpg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction 2.jpg" alt="Roof Finishing">
+            <div class="overlay">Roof Finishing</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+        <a href="../img/paintin.jpg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/paintin.jpg" alt="Wall Design">
+            <div class="overlay">Wall Design</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/arc.jpg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/arc.jpg" alt="Exterior Finish">
+            <div class="overlay">Exterior Finish</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction U.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction U.jpeg" alt="Exterior Finish">
+            <div class="overlay">Exterior Finishing</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction U1.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction U1.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Painting.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Painting.jpeg" alt="Exterior Finish">
+            <div class="overlay">Painting</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Painting1.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Painting1.jpeg" alt="Exterior Finish">
+            <div class="overlay">Exterior Painting</div>
+          </div>
+        </a>
+      </div>
+
+       <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction U2.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction U2.jpeg" alt="Exterior Finish">
+            <div class="overlay">Exterior Construction</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction U3.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction U3.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+<!--Updates 1/3/26-->
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 1.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 1.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 2.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 2.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 3.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 3.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 4.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 4.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 5.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 5.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 6.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 6.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 7.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 7.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 8.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 8.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 9.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 9.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 10.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 10.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 11.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 11.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 12.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 12.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 13.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 13.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 14.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 14.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 15.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 15.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 16.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 16.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 17.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 17.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 18.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 18.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 19.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 19.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 20.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 20.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+<!-- -->
+        <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 21.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 21.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+  <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 22.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 22.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+
+        <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 23.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 23.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+
+        <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 24.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 24.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+
+        <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 25.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 25.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+
+        <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 26.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 26.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+
+        <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 27.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 27.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+
+        <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 28.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 28.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 29.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 29.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 30.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 30.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Construction/Construction 31.jpeg" data-lightbox="construction-gallery">
+          <div class="image-box">
+            <img src="../img/Construction/Construction 31.jpeg" alt="Exterior Finish">
+            <div class="overlay">Construction</div>
+          </div>
+        </a>
+      </div>
+
+      
+
+    </div>
+
+    <div class="text-center mt-5 wow animate__animated animate__fadeInUp">
+      <a href="../index.html#project" class="btn btn-primary btn-lg shadow-lg">Back to Projects</a>
+    </div>
+  </div>
+
+  <footer class="wow animate__animated animate__fadeIn">
+    © 2026 Classical Boma Interiors. Building with precision and pride.
+  </footer>
+
+  <script> new WOW().init(); </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

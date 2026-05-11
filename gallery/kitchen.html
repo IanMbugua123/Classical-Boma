@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kitchen Cabinets</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Bootstrap CSS -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+
+  <!-- WOW.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+  <style>
+    /* --- Gradient Background --- */
+    body {
+      background: linear-gradient(135deg, #1a1a1a, #3a2e1f, #b8860b);
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+    }
+
+    h2 {
+      color: #f8c471;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .btn-primary {
+      background-color: #b8860b;
+      border-color: #b8860b;
+    }
+
+    .btn-primary:hover {
+      background-color: #d4af37;
+      border-color: #d4af37;
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* --- Image Box --- */
+    .image-box {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      aspect-ratio: 4 / 3;
+      background-color: #2a2a2a;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .image-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    }
+
+    .image-box:hover img {
+      transform: scale(1.1);
+    }
+
+    /* --- Overlay --- */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: #f8c471;
+      opacity: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.4s ease;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+    }
+
+    .image-box:hover .overlay {
+      opacity: 1;
+    }
+
+    footer {
+      text-align: center;
+      color: #f8c471;
+      padding: 25px 0;
+      font-size: 0.95rem;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .image-box {
+        aspect-ratio: 1 / 1;
+      }
+    }
+
+    .wow { visibility: hidden; }
+    .wow.animate__animated { visibility: visible; }
+  </style>
+</head>
+
+<body>
+
+  <div class="container py-5">
+    <h2 class="text-center mb-4 wow animate__animated animate__fadeInDown" data-wow-delay="0.1s">
+      Kitchen Cabinet Designs
+    </h2>
+
+    <div class="row g-4">
+      <div class="col-md-4 wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
+        <a href="../img/c.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/c.jpeg" alt="Modern Kitchen Setup">
+            <div class="overlay">Modern Kitchen Setup</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+        <a href="../img/KCbin.jpg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/KCbin.jpg" alt="Luxury Cabinet Finish">
+            <div class="overlay">Luxury Cabinet Finish</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
+        <a href="../img/kc.jpg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/kc.jpg" alt="Elegant Wood Texture">
+            <div class="overlay">Elegant Wood Texture</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s">
+        <a href="../img/kitchen cabinet.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/kitchen cabinet.jpeg" alt="Premium Counter Design">
+            <div class="overlay">Premium Counter Design</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+        <a href="../img/KCbin-3.jpg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/KCbin-3.jpg" alt="Matte Finish Storage">
+            <div class="overlay">Matte Finish Storage</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/kc.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/kc.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay">Custom Wall Cabinets</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kitchen main.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kitchen main.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay">Finished Modern Kitchen</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kcabins.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kcabins.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay">Kitchen Cabinets</div>
+          </div>
+        </a>
+      </div>
+
+       <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Wall.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Wall.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay"></div>
+          </div>
+        </a>
+      </div>
+
+        <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kitchen.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kitchen.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay"> Kitchen Interior</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kitchen 2.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kitchen 2.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay"> Modern Kitchen Interior</div>
+          </div>
+        </a>
+      </div>
+
+       <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kitchen 3.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kitchen 3.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay"> Modern Kitchen Interior </div>
+          </div>
+        </a>
+      </div>
+<!-- updates -->
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kitchen Cabinates/Kitchen Cabinates.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kitchen Cabinates/Kitchen Cabinates.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay"> Modern Kitchen Interior </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kitchen Cabinates/Kitchen Cabinates 1.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kitchen Cabinates/Kitchen Cabinates 1.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay"> Modern Kitchen Interior </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kitchen Cabinates/Kitchen Cabinates 2.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kitchen Cabinates/Kitchen Cabinates 2.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay"> Modern Kitchen Interior </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kitchen Cabinates/Kitchen Cabinates 3.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kitchen Cabinates/Kitchen Cabinates 3.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay"> Modern Kitchen Interior </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kitchen Cabinates/Kitchen Cabinates 4.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kitchen Cabinates/Kitchen Cabinates 4.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay"> Modern Kitchen Interior </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kitchen Cabinates/Kitchen Cabinates 5.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kitchen Cabinates/Kitchen Cabinates 5.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay"> Modern Kitchen Interior </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kitchen Cabinates/Kitchen Cabinates 6.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kitchen Cabinates/Kitchen Cabinates 6.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay"> Modern Kitchen Interior </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kitchen Cabinates/Nyali/Nyali-cabinates6.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kitchen Cabinates/Nyali/Nyali-cabinates6.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay"> Modern Kitchen Interior </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kitchen Cabinates/Nyali/Nyali-cabinates7.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kitchen Cabinates/Nyali/Nyali-cabinates7.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay"> Modern Kitchen Interior </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kitchen Cabinates/Nyali/Nyali-cabinates8.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kitchen Cabinates/Nyali/Nyali-cabinates8.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay"> Modern Kitchen Interior </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kitchen Cabinates/Nyali/Nyali-cabinates9.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kitchen Cabinates/Nyali/Nyali-cabinates9.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay"> Modern Kitchen Interior </div>
+          </div>
+        </a>
+      </div>
+
+      <!--Updates 29/04/2026-->
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kitchen Cabinates/Kitchen Cabinates 11.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kitchen Cabinates/Kitchen Cabinates 11.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay">  In Progress</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kitchen Cabinates/Kitchen Cabinates 12.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kitchen Cabinates/Kitchen Cabinates 12.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay"> In Progress </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kitchen Cabinates/Kitchen Cabinates 13.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kitchen Cabinates/Kitchen Cabinates 13.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay">  In Progress</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kitchen Cabinates/Kitchen Cabinates 14.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kitchen Cabinates/Kitchen Cabinates 14.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay"> In Progress </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
+        <a href="../img/Kitchen Cabinates/Kitchen Cabinates 15.jpeg" data-lightbox="kitchen-gallery">
+          <div class="image-box">
+            <img src="../img/Kitchen Cabinates/Kitchen Cabinates 15.jpeg" alt="Custom Wall Cabinets">
+            <div class="overlay"> In Progress </div>
+          </div>
+        </a>
+      </div>
+
+      
+       
+    </div>
+
+    <div class="text-center mt-5 wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
+      <a href="../index.html#project" class="btn btn-primary btn-lg shadow-lg">Back to Projects</a>
+    </div>
+  </div>
+
+  <footer class="wow animate__animated animate__fadeIn" data-wow-delay="0.9s">
+   © 2026 Classical Boma Interiors. Designed with passion for detail.
+  </footer>
+  
+
+  <!-- WOW.js Init -->
+  <script> new WOW().init(); </script>
+
+  <!-- Lightbox2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

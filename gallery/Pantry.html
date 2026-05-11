@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pantry</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<style>
+body {
+  background: linear-gradient(135deg, #0f2f1f, #1f5e3b, #2e8b57);
+  color: #eaffea;
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 { color: #b8ffcc; }
+
+.horizontal-gallery {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.horizontal-gallery a {
+  flex: 0 0 auto;
+  width: 300px;
+}
+
+.image-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  height: 220px;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  color: #b8ffcc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.image-box:hover .overlay { opacity: 1; }
+
+.btn-primary {
+  background-color: #2e8b57;
+  border: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #b8ffcc;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container py-5">
+<h2 class="text-center mb-4">Pantry</h2>
+
+<div class="horizontal-gallery">
+  <a href="../img/Pantry/Pantry.jpeg" data-lightbox="pantry">
+    <div class="image-box">
+      <img src="../img/Pantry/Pantry.jpeg">
+      <div class="overlay">Pantry Storage</div>
+    </div>
+  </a>
+
+  <a href="../img/Pantry/Pantry1.jpeg" data-lightbox="pantry">
+    <div class="image-box">
+      <img src="../img/Pantry/Pantry1.jpeg">
+      <div class="overlay">Modern Pantry</div>
+    </div>
+  </a>
+
+  <a href="../img/Pantry/Pantry2.jpeg" data-lightbox="pantry">
+    <div class="image-box">
+      <img src="../img/Pantry/Pantry2.jpeg">
+      <div class="overlay">Modern Pantry</div>
+    </div>
+  </a>
+</div>
+
+<div class="text-center mt-5">
+  <a href="../index.html#project" class="btn btn-primary btn-lg">Back</a>
+</div>
+</div>
+
+<footer>© 2026 Pantry Designs</footer>
+
+<script>new WOW().init();</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+</body>
+</html>
