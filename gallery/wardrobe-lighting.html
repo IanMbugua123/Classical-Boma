@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Wardrobe Lighting</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<style>
+body {
+  background: linear-gradient(135deg, #0d0d11, #161622, #1f1f2e);
+  color: #f1f1f6;
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 { 
+  color: #ffca61; 
+  text-shadow: 0 0 15px rgba(255, 202, 97, 0.4);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.horizontal-gallery {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+/* Custom Scrollbar for ambient feel */
+.horizontal-gallery::-webkit-scrollbar {
+  height: 6px;
+}
+.horizontal-gallery::-webkit-scrollbar-thumb {
+  background: #ffca61;
+  border-radius: 10px;
+}
+
+.horizontal-gallery a {
+  flex: 0 0 auto;
+  width: 300px;
+}
+
+.image-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  height: 220px;
+  border: 1px solid rgba(255, 202, 97, 0.2);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(13, 13, 17, 0.75);
+  color: #ffca61;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border: 2px solid #ffca61;
+  border-radius: 16px;
+}
+
+.image-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(255, 202, 97, 0.3);
+}
+
+.image-box:hover .overlay { opacity: 1; }
+
+.btn-primary {
+  background-color: #ffca61;
+  color: #0d0d11;
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(255, 202, 97, 0.2);
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ffe0a3;
+  color: #0d0d11;
+  transform: translateY(-2px);
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: rgba(241, 241, 246, 0.5);
+  font-size: 0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container py-5">
+<h2 class="text-center mb-4 wow fadeInDown">Wardrobe Lighting</h2>
+
+<div class="horizontal-gallery wow fadeInUp">
+  <a href="../img/Wardrobe-Lighting/Wardrobe Lighting.jpeg" data-lightbox="lighting">
+    <div class="image-box">
+      <img src="../img/Wardrobe-Lighting/Wardrobe Lighting.jpeg" alt="LED Strip Profiles">
+      <div class="overlay"></div>
+    </div>
+  </a>
+
+  <a href="../img/Wardrobe-Lighting/Wardrobe Lighting1.jpeg" data-lightbox="lighting">
+    <div class="image-box">
+      <img src="../img/Wardrobe-Lighting/Wardrobe Lighting1.jpeg" alt="Sensor Activation">
+      <div class="overlay">Sensor Activation</div>
+    </div>
+  </a>
+
+  <a href="../img/Wardrobe-Lighting/WhatsApp Image 2026-02-16 at 08.23.34.jpeg" data-lightbox="lighting">
+    <div class="image-box">
+      <img src="../img/Wardrobe-Lighting/WhatsApp Image 2026-02-16 at 08.23.34.jpeg" alt="Ambient Display">
+      <div class="overlay">Ambient Display</div>
+    </div>
+  </a>
+</div>
+
+<div class="text-center mt-5">
+  <a href="../index.html#project" class="btn btn-primary btn-lg">Back</a>
+</div>
+</div>
+
+<footer>© 2026 Wardrobe Lighting Concepts</footer>
+
+<script>new WOW().init();</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+</body>
+</html>
